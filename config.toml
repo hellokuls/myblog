@@ -1,0 +1,40 @@
+baseURL = 'https://kuls.netlify.app/'
+languageCode = 'en-us'
+title = 'Kuls'
+theme = 'Diary'
+DefaultContentLanguage = "zh-cn"
+
+[[menu.main]]
+url = "/categories"
+name = "分类"
+weight = 3
+
+[[menu.main]]
+url = "/tags"
+name = "标签"
+weight = 2
+
+[[menu.main]]
+url = "/posts"
+name = "归档"
+weight = 1
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
+
+[params]
+enableGitalk = true
+  [params.gitalk]
+	  owner = "hellokuls"
+	  repo = "gitalk-comments"
+	  client_id = "97b770e0c25716420df1"
+	  client_secret = "26b0005b498e39790228fd43beab1320e8e3b437"
